@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  background-color: #f9fafb;
 }
 .header__container {
   width: 1058px;
@@ -17,11 +19,21 @@
   justify-content: space-between;
   text-align: center;
   background-color: #1b152b;
+  margin-top: 15px;
 }
 .header__container span {
   font-size: 20.05px;
   font-weight: 700;
   color: #ffffff;
+}
+.header__container img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 .nav {
   display: flex;
@@ -36,6 +48,7 @@
 }
 a {
   font-size: 18px;
+  font-family: "Manrope";
   text-decoration: none;
   color: #ffffff;
 }
@@ -45,6 +58,8 @@ a:hover {
 .header__container button {
   width: 137px;
   margin-right: 25px;
+  font-family: "Inter";
+  font-size: 16px;
   border: none;
   height: 35px;
   border-radius: 20px;
@@ -53,5 +68,88 @@ a:hover {
   color: #ffffff;
 }
 .header__container button:hover {
-  background-color: #879921;
+  background-color: #ffffff;
+  color: #1b152b;
+}
+
+/* HERO section */
+
+.hero__container h1 {
+  margin-left: 251px;
+  font-family: "Inter";
+  margin-top: 64px;
+  font-size: 72px;
+  letter-spacing: -3.83px;
+  color: #1b152b;
+  max-width: 1058px;
+}
+.hero__container p {
+  width: 1058px;
+  font-family: "Manrope";
+  font-size: 16px;
+  color: #7a7d9c;
+  margin-left: 511px;
+  margin-top: 16px;
+}
+.hero__btn {
+  display: flex;
+  margin-left: 521px;
+  margin-top: 16px;
+  gap: 15px;
+}
+
+.hero__btn button:first-child {
+  width: 108px;
+  font-family: "Inter";
+  font-size: 16px;
+  letter-spacing: -0.96px;
+  border: none;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #1b152b;
+  cursor: pointer;
+  color: #ffffff;
+}
+.hero__btn button:last-child {
+  width: 137px;
+  font-family: "Inter";
+  font-size: 16px;
+  border: none;
+  height: 35px;
+  letter-spacing: -0.96px;
+  border-radius: 20px;
+  background-color: #7f56d9;
+  cursor: pointer;
+  color: #ffffff;
+}
+.hero__btn button:hover {
+  background-color: #e45e16;
+  color: #000000;
+}
+.contact {
+  background-color: #ffffff;
+  color: #1b152b;
+}
+.hero__container img {
+  margin-top: 48px;
+  margin-left: 211px;
+}
+.stats {
+  display: flex;
+  text-align: center;
+  gap: 127px;
+  margin-top: 64px;
+  margin-left: 353px;
+  color: #7f56d9;
+  font-family: "Inter";
+}
+.stats p:first-child {
+  font-family: "Inter";
+  letter-spacing: -3.83px;
+  font-size: 48px;
+  font-weight: 600;
+}
+.stats p:last-child {
+  font-family: "Manrope";
+  font-size: 24px;
 }
